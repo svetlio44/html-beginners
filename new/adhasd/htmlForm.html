@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="'bg">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="formStyle.css">
+    </head>
+    <body>
+        <header>
+            <h1>Регистрация</h1>
+        </header>
+        <selection>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Лична информация</legend>
+
+                    <label for="username">Потребителско име:</label>
+                    <input tupe="text" id="username" name="username" required>
+
+                    <label for="password">Парола:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="email">Имейл:</label>
+                    <input for="email" id="email" name="email" required>
+
+                    <label for="birthdate">Дата на раждане:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+
+                    <label for="gender">Пол:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Мъж</option>
+                        <option value="famale">Жена</option>
+                        <option value="other">Друг</option>
+                    </select>
+                    
+                    <label for="bio">Биография:</label>
+                    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Разкажете за вас"></textarea>
+
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        Съгласен съм с условията за ползване
+                    </label>
+
+                    <button type="submit">Регистрирай се</button>
+                </fieldset>
+            </form>
+        </selection>
+    </body>
+</html>
